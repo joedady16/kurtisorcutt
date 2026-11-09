@@ -3,3 +3,20 @@
 
 /* V3 media pass */
 .hero-photo{min-height:72vh;background:linear-gradient(90deg,rgba(6,17,27,.98) 0%,rgba(6,17,27,.82) 46%,rgba(6,17,27,.16) 72%),url("https://www.kurtisorcutt.com/resources/03.jpeg") center 32%/cover no-repeat;color:white;display:flex;align-items:center;position:relative}.hero-photo .hero-grid{grid-template-columns:1.05fr .95fr}.hero-photo .portrait-space{min-height:520px}.media-card{overflow:hidden;border:1px solid var(--line);background:white}.media-card img{width:100%;height:100%;min-height:420px;object-fit:cover;display:block}.coat img{object-fit:contain;background:#fff;padding:24px}.photo-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;align-items:stretch}.caption{font-size:12px;color:var(--muted);padding:12px 14px;border-top:1px solid #e8e0d2}.gallery-photo{min-height:270px;background-size:cover;background-position:center;position:relative;overflow:hidden}.gallery-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(5,13,20,.88))}.gallery-photo div{position:absolute;z-index:2;bottom:18px;left:20px;right:20px;color:white}.gallery-photo b{font:22px Georgia}.gallery-photo span{display:block;font-size:12px;color:#d7dee2}.formal-style{padding:28px;background:#081521;color:#eef2f4;border-top:2px solid var(--gold)}.formal-style h3{font:26px Georgia;color:#d9bf84;margin:0 0 10px}.formal-style p{margin:0;color:#ccd4d9}.source-note{font-size:11px;color:#76838c;margin-top:14px}@media(max-width:900px){.hero-photo{background-position:62% center}.hero-photo .hero-grid{grid-template-columns:1fr}.hero-photo .portrait-space{min-height:240px}.photo-grid{grid-template-columns:1fr}}
+
+/* Responsive image visibility: preserve the portrait on narrow viewports. */
+.hero-photo{background-color:#081521;background-repeat:no-repeat;background-size:cover;background-position:72% 32%}
+@media(max-width:900px){
+  .hero-photo{min-height:620px;background-position:68% center;background-image:linear-gradient(90deg,rgba(6,17,27,.93),rgba(6,17,27,.48)),url("https://www.kurtisorcutt.com/resources/03.jpeg")}
+  .hero-photo .hero-grid{grid-template-columns:1fr;padding:55px 0}
+  .hero-photo .portrait-space{display:none}
+  .photo-grid{grid-template-columns:1fr}
+  .media-card img{height:auto;min-height:0;max-height:680px;object-fit:contain}
+}
+@media(max-width:560px){
+  .hero-photo{min-height:580px;background-position:66% center;background-image:linear-gradient(90deg,rgba(6,17,27,.92),rgba(6,17,27,.62)),url("https://www.kurtisorcutt.com/resources/03.jpeg")}
+  .hero-photo .hero-grid{padding:45px 0}
+  .hero-photo h1{font-size:clamp(43px,12vw,64px)}
+  .hero-photo .lead{font-size:17px;line-height:1.55}
+  .media-card img{width:100%;height:auto;min-height:0;object-fit:contain}
+}
