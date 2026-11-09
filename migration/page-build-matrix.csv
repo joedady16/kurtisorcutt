@@ -1,0 +1,9 @@
+Page,Publish path,Menu visibility,Navigation group,Reference file
+Home,/,Home,Primary navigation,index.html
+About,/about.html,Yes,Primary navigation,about.html
+Professional,/professional.html,Yes,Primary navigation,professional.html
+Service,/service.html,Yes,Primary navigation,service.html
+Faith,/faith.html,Yes,Primary navigation,faith.html
+Honors,/honors.html,Yes,Primary navigation,honors.html
+Gallery,/gallery.html,Yes,Primary navigation,gallery.html
+Contact,/contact.html,Yes,Primary navigation,contact.html
